@@ -1,13 +1,13 @@
 import React from 'react';
 import Button from './Button';
 
-const Card = () => {
+const Card = ({ randomColor, getRandomValues }) => {
   return (
-    <div className="card">
+    <div className={`card ${randomColor}`}>
       <div className="card-body">
-        <h3 className="card-title">hola</h3>
-        <p className="card-text">hola</p>
-        <Button></Button>
+        <h3 className="card-title">titulo</h3>
+        <p className="card-text">Lorem ipsum dolor sit amet.</p>
+        <Button getRandomValues={getRandomValues}></Button>
       </div>
     </div>
   );
