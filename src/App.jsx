@@ -1,9 +1,11 @@
 import './App.css';
-import './Components/Card';
+import Card from './Components/Card.jsx';
+
 function App() {
   return;
   <>
-    <Card />
+    <Card></Card>
+    <p>hola</p>
   </>;
 }
 
