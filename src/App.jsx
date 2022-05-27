@@ -28,8 +28,12 @@ function App() {
   };
 
   return (
-    <div className="container">
-      <Card randomColor={randomColor} getRandomValues={getRandomValues}></Card>
+    <div className={`container ${randomColor}`}>
+      <Card
+        randomColor={randomColor}
+        randomQuote={randomQuote}
+        getRandomValues={getRandomValues}
+      ></Card>
     </div>
   );
 }

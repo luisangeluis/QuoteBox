@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .blue {
   background-color: blue;
 }
@@ -11,6 +16,58 @@
   background-color: yellow;
 }
 
+.color-blue {
+  color: blue;
+}
+.color-red {
+  color: red;
+}
+.color-black {
+  color: black;
+}
+.color-yellow {
+  color: yellow;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/***********card***********/
+/**************************/
 .card {
-  min-height: 3rem;
+  width: 30rem;
+  height: 12rem;
+  padding: 0.5rem 1rem;
+  overflow: auto;
+  text-align: center;
+  border-radius: 3px;
+  background-color: whitesmoke;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+}
+
+.card-title {
+  align-self: flex-end;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.card-text {
+  padding: 0.5rem;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.card button {
+  align-self: flex-end;
 }
