@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import React from 'react';
 import './App.css';
-import Card from './Components/Card.jsx';
+import QuoteBox from './Components/QuoteBox.jsx';
 import quotes from './json/quotes.json';
 
 const colors = ['blue', 'red', 'black', 'yellow'];
@@ -29,11 +29,11 @@ function App() {
 
   return (
     <div className={`container ${randomColor}`}>
-      <Card
+      <QuoteBox
         randomColor={randomColor}
         randomQuote={randomQuote}
         getRandomValues={getRandomValues}
-      ></Card>
+      ></QuoteBox>
     </div>
   );
 }
